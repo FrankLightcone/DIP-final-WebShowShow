@@ -4,12 +4,13 @@ import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 import { Toolbar } from 'polotno/toolbar/toolbar';
 import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
-import { SidePanel } from 'polotno/side-panel';
+import { SidePanel, DEFAULT_SECTIONS } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
 
 import '@blueprintjs/core/lib/css/blueprint.css';
 
 import { createStore } from 'polotno/model/store';
+import { SharpnessSection } from './SharpnessEffect';
 
 const store = createStore({
   key: 'nFA5H9elEytDyPyvKL7T', // you can create it here: https://polotno.com/cabinet/
@@ -19,11 +20,17 @@ const store = createStore({
 });
 const page = store.addPage();
 
+// 创建自定义的 sections 数组，包含默认的和新的锐化功能
+const sections = [
+  ...DEFAULT_SECTIONS,
+  SharpnessSection
+];
+
 export const App = ({ store }) => {
   return (
     <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
-        <SidePanel store={store} />
+        <SidePanel store={store} sections={sections} />
       </SidePanelWrap>
       <WorkspaceWrap>
         <Toolbar store={store} downloadButtonEnabled />
