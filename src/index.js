@@ -11,6 +11,9 @@ import '@blueprintjs/core/lib/css/blueprint.css';
 
 import { createStore } from 'polotno/model/store';
 import { SharpnessSection } from './SharpnessEffect';
+import { SmoothingSection } from './SmoothingEffect'; // 导入磨皮功能
+import { DocumentScannerSection } from './DocumentScannerSection';
+
 
 const store = createStore({
   key: 'nFA5H9elEytDyPyvKL7T', // you can create it here: https://polotno.com/cabinet/
@@ -23,7 +26,10 @@ const page = store.addPage();
 // 创建自定义的 sections 数组，包含默认的和新的锐化功能
 const sections = [
   ...DEFAULT_SECTIONS,
-  SharpnessSection
+  SharpnessSection,
+  DocumentScannerSection,
+  SmoothingSection, // 添加磨皮功能
+
 ];
 
 export const App = ({ store }) => {
