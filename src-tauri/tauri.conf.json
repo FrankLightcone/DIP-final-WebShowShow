@@ -29,7 +29,7 @@
   "bundle": {
     "active": true,
     "targets": "all",
-    "category": "Graphics",
+    "category": "Graphics and Design",
     "shortDescription": "Professional Image Processing Suite",
     "longDescription": "Advanced image editing with ML-powered document scanning, skin smoothing, whitening effects, and professional filters."
   },
