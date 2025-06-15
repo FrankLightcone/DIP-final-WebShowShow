@@ -1,0 +1,37 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+  "productName": "DIP Final - Professional Image Editor",
+  "version": "1.0.0",
+  "identifier": "com.dipfinal.webshowshow",
+  "build": {
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "npm start",
+    "frontendDist": "../build",
+    "devUrl": "http://localhost:3000"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "DIP Final - Professional Image Editor",
+        "width": 1400,
+        "height": 900,
+        "minWidth": 1000,
+        "minHeight": 700,
+        "resizable": true,
+        "fullscreen": false,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "category": "Graphics",
+    "shortDescription": "Professional Image Processing Suite",
+    "longDescription": "Advanced image editing with ML-powered document scanning, skin smoothing, whitening effects, and professional filters."
+  },
+  "plugins": {}
+}
