@@ -13,6 +13,10 @@ import { createStore } from 'polotno/model/store';
 import { SharpnessSection } from './SharpnessEffect';
 import { SmoothingSection } from './SmoothingEffect'; // 导入磨皮功能
 import { DocumentScannerSection } from './DocumentScannerSection';
+import { WhiteningSection } from './WhiteningEffect'; // 导入美白功能
+import { ImHistSection } from './ImHist.js'; // 导入直方图功能
+import { BWAndFiltersSection } from './BWAndFiltersEffect.js';
+import { HistogramEnhancementSection } from './HistogramEnhancementSection'; // 导入新的直方图增强功能
 
 
 const store = createStore({
@@ -29,6 +33,10 @@ const sections = [
   SharpnessSection,
   DocumentScannerSection,
   SmoothingSection, // 添加磨皮功能
+  WhiteningSection, // 添加美白功能
+  ImHistSection, // 添加直方图功能
+  BWAndFiltersSection, // 添加黑白和滤镜功能
+  HistogramEnhancementSection, // 添加新的直方图增强功能
 
 ];
 
