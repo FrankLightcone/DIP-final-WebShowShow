@@ -195,11 +195,11 @@ export const BWAndFiltersPanel = observer(({ store }) => {
 
 // 自定义图标组件
 const BWFiltersIcon = () => (
-  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-    <circle cx="7" cy="12" r="5" fill="gray" opacity="0.7" />
-    <circle cx="17" cy="12" r="5" fill="orange" opacity="0.5" />
-    <circle cx="12" cy="7" r="3" fill="blue" opacity="0.4" />
-  </svg>
+  <img 
+    src="https://ts1.tc.mm.bing.net/th/id/R-C.e4fe1a1677f72143432de42d44e85f9f?rik=QNhDoEtIS2Ve3A&riu=http%3a%2f%2finews.gtimg.com%2fnewsapp_match%2f0%2f15103659616%2f0&ehk=gvcKqCFPB5ADv7JtilqqKL%2b1U87peA41C0HCNdeflKc%3d&risl=&pid=ImgRaw&r=0" 
+    alt="滤镜图标" 
+    style={{ width: '24px', height: '24px' }}
+  />
 );
 
 // 导出滤镜效果的 SectionTab 配置
@@ -211,4 +211,4 @@ export const BWAndFiltersSection = {
     </SectionTab>
   ),
   Panel: BWAndFiltersPanel,
-}; 
+};

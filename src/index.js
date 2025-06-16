@@ -17,6 +17,7 @@ import { WhiteningSection } from './WhiteningEffect'; // 导入美白功能
 import { ImHistSection } from './ImHist.js'; // 导入直方图功能
 import { BWAndFiltersSection } from './BWAndFiltersEffect.js';
 import { HistogramEnhancementSection } from './HistogramEnhancementSection'; // 导入新的直方图增强功能
+import { TextCorrectionSection } from './TextCorrectionEffect'; // 导入文本矫正功能
 
 
 const store = createStore({
@@ -37,6 +38,7 @@ const sections = [
   ImHistSection, // 添加直方图功能
   BWAndFiltersSection, // 添加黑白和滤镜功能
   HistogramEnhancementSection, // 添加新的直方图增强功能
+  TextCorrectionSection, // 添加文本矫正功能
 
 ];
 

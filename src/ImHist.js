@@ -134,11 +134,11 @@ export const ImHistPanel = observer(({ store }) => {
   );
 });
 const ImhistIcon = () => (
-  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-    <circle cx="7" cy="12" r="5" fill="gray" opacity="0.7" />
-    <circle cx="17" cy="12" r="5" fill="orange" opacity="0.5" />
-    <circle cx="12" cy="7" r="3" fill="blue" opacity="0.4" />
-  </svg>
+  <img 
+    src="https://tse1-mm.cn.bing.net/th/id/OIP-C.Df-VPz22BDyyI0AduHeMzAHaHa?r=0&pid=ImgDet&w=474&h=474&rs=1"
+    alt="黑白直方图均衡化图标" 
+    style={{ width: '24px', height: '24px' }}
+  />
 );
 export const ImHistSection = {
   name: 'imhist',
